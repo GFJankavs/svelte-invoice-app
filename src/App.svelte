@@ -1,14 +1,10 @@
 <script lang="ts">
-import Button from "./lib/Button.svelte";
-import PlusIcon from "./assets/icon-plus.svg";
+    import Button from "./lib/Button/Button.svelte";
 </script>
 
 <main>
-  <Button>
-    <img src={PlusIcon} alt="plus icon" slot="icon"/>
-    Click me
-  </Button>
+    <Button>Edit</Button>
 </main>
-<style>
 
+<style scoped>
 </style>

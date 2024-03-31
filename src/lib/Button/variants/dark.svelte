@@ -1,10 +1,9 @@
 <script lang="ts">
-
+    export let dark: boolean = false;
 </script>
 
-<button class="heading--s-variant">
-    <slot name="icon"/>
-    <slot></slot>
+<button class="heading--s-variant {dark ? 'dark' : ''}">
+    <slot />
 </button>
 
 <style>
@@ -15,6 +14,9 @@
         background-color: var(--color-1);
         cursor: pointer;
         color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     button:hover {
