@@ -1,71 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
 
 :root {
-  --color-1: #7C5DFA;
-  --color-2: #9277FF;
-  --color-3: #1E2139;
-  --color-4: #252945;
-  --color-5: #DFE3FA;
-  --color-6: #888EB0;
-  --color-7: #7E88C3;
-  --color-8: #0C0E16;
-  --color-9: #EC5757;
-  --color-10: #FF9797;
-  --color-11: #F8F8FB;
-  --colol-12: #141625;
+    --color-1: #7c5dfa;
+    --color-2: #9277ff;
+    --color-3: #1e2139;
+    --color-4: #252945;
+    --color-5: #dfe3fa;
+    --color-6: #888eb0;
+    --color-7: #7e88c3;
+    --color-8: #0c0e16;
+    --color-9: #ec5757;
+    --color-10: #ff9797;
+    --color-11: #f8f8fb;
+    --colol-12: #141625;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
 }
 
 .heading--l {
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -1.125px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.125px;
 }
 
 .heading--m {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.75px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.75px;
 }
 
 .heading--s {
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.25px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.25px;
 }
 
 .heading--s-variant {
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: -0.25px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
 }
 
 .text--body {
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: -0.1px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
 }
 
 .text--body-variant {
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 15px;
-  letter-spacing: -0.1px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
 }

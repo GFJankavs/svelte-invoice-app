@@ -1,11 +1,19 @@
 <script lang="ts">
-    export let src: string = "";
+    export let isDelete: boolean = false;
+    import IconPlus from "../../icons/IconPlus.svelte";
+    export let src: typeof IconPlus | undefined;
 </script>
 
-<button class="heading--s-variant withIcon">
-    <div class="icon-plus">
-        <img src={string} alt="plus icon" />
-    </div>
+<button
+    class="heading--s-variant {src ? 'withIcon' : ''} {isDelete
+        ? 'delete'
+        : ''}"
+>
+    {#if src}
+        <div class="icon-plus">
+            <svelte:component this={src} />
+        </div>
+    {/if}
     <slot />
 </button>
 
@@ -24,6 +32,14 @@
 
     button:hover {
         background-color: var(--color-2);
+    }
+
+    button.delete {
+        background-color: var(--color-9);
+    }
+
+    button.delete:hover {
+        background-color: var(--color-10);
     }
 
     button.withIcon {

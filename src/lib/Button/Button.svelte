@@ -1,40 +1,31 @@
 <script lang="ts">
-    import ButtonWithIcon from "./variants/withIcon.svelte";
-    import ButtonWithLightAndDark from "./variants/withLightAndDark.svelte";
-    import ButtonDarkVariant from "./variants/dark.svelte";
+    import IconPlus from "../icons/IconPlus.svelte";
+    import ButtonPrimary from "./variants/primary.svelte";
+    import ButtonSecondary from "./variants/secondary.svelte";
+    import ButtonTertiary from "./variants/tertiary.svelte";
+    import ButtonLong from "./variants/long.svelte";
 
-    export let withIcon: string | undefined = "";
+    export let variant: "primary" | "secondary" | "tertiary" | "long" =
+        "primary";
+    export let src: typeof IconPlus | undefined = undefined;
     export let mode: "light" | "dark" | undefined = undefined;
+    export let isDelete: boolean = false;
 </script>
 
-{#if withIcon && withIcon.length > 0}
-    <ButtonWithIcon src={withIcon}>
+{#if variant === "primary"}
+    <ButtonPrimary {src} {isDelete}>
         <slot />
-    </ButtonWithIcon>
-{:else if mode}
-    <ButtonWithLightAndDark {mode}>
+    </ButtonPrimary>
+{:else if variant === "secondary"}
+    <ButtonSecondary {mode}>
         <slot />
-    </ButtonWithLightAndDark>
-{:else}
-    <ButtonDarkVariant dark={mode === "dark"}>
+    </ButtonSecondary>
+{:else if variant === "tertiary"}
+    <ButtonTertiary dark={mode === "dark"}>
         <slot />
-    </ButtonDarkVariant>
+    </ButtonTertiary>
+{:else if variant === "long"}
+    <ButtonLong>
+        <slot />
+    </ButtonLong>
 {/if}
-
-<style>
-    button {
-        border: none;
-        border-radius: 24px;
-        padding: 16px 24px;
-        background-color: var(--color-1);
-        cursor: pointer;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    button:hover {
-        background-color: var(--color-2);
-    }
-</style>

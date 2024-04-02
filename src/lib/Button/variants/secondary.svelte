@@ -2,9 +2,7 @@
     export let mode: "light" | "dark" = "light";
 </script>
 
-<button
-    class="button heading--s-variant {variant === 'dark' ? 'dark' : 'light'}"
->
+<button class="button heading--s-variant {mode === 'dark' ? 'dark' : 'light'}">
     <slot />
 </button>
 
